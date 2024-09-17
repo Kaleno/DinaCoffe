@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dina Coffe</title>
+    <title>Dina Coffe Part 2</title>
     <!-- Pilihan font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,19 +26,56 @@
         <a href="#home">Home</a>
         <a href="#about">Tentang kami</a>
         <a href="#menu">Menu</a>
+        <a href="#products">Produk</a>
         <a href="#contact">Kontak Kami</a>
       </div>
       <div class="navbar-extra">
-        <a href="#" id="search"
+        <a href="#" id="search-button"
           ><i><i data-feather="search"></i></i
         ></a>
-        <a href="#" id="shopping-cart"
+        <a href="#" id="shopping-chart-button"
           ><i><i data-feather="shopping-cart"></i></i
         ></a>
         <a href="#" id="hamburger-menu"
           ><i><i data-feather="menu"></i></i
         ></a>
       </div>
+
+      <!-- Seacr Form Start -->
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="search-here . . ." />
+        <label for="search-box"><i data-feather="search"></i></label>
+      </div>
+      <!-- Seacr Form End -->
+
+      <!-- shopping Cart Start -->
+      <div class="shopping-cart">
+        <div class="cart-item">
+          <img src="img/product/1.jpeg" alt="Product 1" />
+          <div class="item-detail">
+            <h3>Product 1</h3>
+            <div class="item-price">IDR 30K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/product/1.jpeg" alt="Product 1" />
+          <div class="item-detail">
+            <h3>Product 1</h3>
+            <div class="item-price">IDR 30K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/product/1.jpeg" alt="Product 1" />
+          <div class="item-detail">
+            <h3>Product 1</h3>
+            <div class="item-price">IDR 30K</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+      </div>
+      <!-- shopping Cart end -->
     </nav>
 
     <!-- navbar end -->
@@ -122,6 +159,78 @@
     </section>
     <!-- Menu Section untuk pilihan dimenu  end-->
 
+    <!-- Product section -->
+    <section class="products" id="products">
+      <h2><span>Produk Unggulan</span> Kami</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum facere
+        veniam explicabo in, facilis voluptatibus.
+      </p>
+      <div class="row">
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+          </div>
+          <div class="product-image">
+            <img src="img/product/1.jpeg" alt="Product 1" />
+          </div>
+          <div class="product-content">
+            <h3>Coffe Beans 1</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+            </div>
+          </div>
+          <div class="product-price">IDR 30K <span> IDR 50K</span></div>
+        </div>
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+          </div>
+          <div class="product-image">
+            <img src="img/product/1.jpeg" alt="Product 1" />
+          </div>
+          <div class="product-content">
+            <h3>Coffe Beans 1</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+            </div>
+          </div>
+          <div class="product-price">IDR 30K <span> IDR 50K</span></div>
+        </div>
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+          </div>
+          <div class="product-image">
+            <img src="img/product/1.jpeg" alt="Product 1" />
+          </div>
+          <div class="product-content">
+            <h3>Coffe Beans 1</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+            </div>
+          </div>
+          <div class="product-price">IDR 30K <span> IDR 50K</span></div>
+        </div>
+      </div>
+    </section>
+    <!-- Product end -->
+
     <!-- contact Section Start -->
     <section id="contact" class="contact">
       <h2><span>Kontak </span> Kami</h2>
@@ -176,6 +285,33 @@
       </div>
     </footer>
     <!-- footer end -->
+
+    <!-- Modal Box Item Detail Start-->
+<div class="modal" id="item-detail-modal">
+  <div class="modal-container">
+    <a href="#" class="close-icon"><i data-feather="x"></i></a>
+    <div class="modal-content">
+      <img src="img/product/1.jpeg" alt="Product 1">
+      <div class="product-conten">
+        <h3>Product 1</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium asperiores quod error commodi nostrum a, sed facere sequi temporibus officia dolorem! Perspiciatis hic deserunt totam.</p>
+        <div class="product-stars">
+          <i data-feather="star" class="star-full"></i>
+          <i data-feather="star" class="star-full"></i>
+          <i data-feather="star" class="star-full"></i>
+          <i data-feather="star" class="star-full"></i>
+          <i data-feather="star"></i>
+        </div>
+        <div class="product-price">IDR 30K <span> IDR 50K</span></div>
+        <a href="#"><i data-feather="shopping-cart"></i><span>add to cart</span></a>
+      </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Modal Box Item end -->
 
     <!-- feather icons -->
     <script>
