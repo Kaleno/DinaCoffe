@@ -179,7 +179,7 @@
         <template x-for="(item,index) in item" x-key="index">
         <div class="product-card">
           <div class="product-icons">
-            <a href="#">
+            <a href="#" @click.prevent="$store.cart.add(item)">
               <svg
   width="24"
   height="24"
@@ -270,7 +270,7 @@ stroke-linejoin="round"
 </svg>
             </div>
           </div>
-          <div class="product-price"><span x-text="item.price"></span></div>
+          <div class="product-price"><span x-text="rupiah(item.price)"></span></div>
         </div>
       </template>
       </div>

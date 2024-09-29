@@ -8,4 +8,23 @@ document.addEventListener("alpine:init", () => {
       { id: 1, name: "Sumatra Mandheling", img: "5.jpeg", price: 40000 },
     ],
   }));
+  Alpine.store("cart", {
+    items: [],
+    total: 0,
+    quantity: 0,
+    add(newItem) {
+      this.items.push(newItem);
+      console.log(this.items);
+    },
+  });
 });
+
+// konversi ke rupiah
+
+const rupiah = (number) => {
+  return new Intl.NumberFormat("id-ID", {
+    style: "currency",
+    currency: "IDR",
+    minimumFractionDigits: 0,
+  }).format(number);
+};
